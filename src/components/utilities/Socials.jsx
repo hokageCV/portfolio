@@ -1,7 +1,8 @@
 import React from 'react';
-import github from "/assets/site_icons/github.svg"
-import linkedin from "/assets/site_icons/linkedin.svg"
-import twitter from "/assets/site_icons/twitter.svg"
+
+import github from '/assets/site_icons/github.svg'
+import linkedin from '/assets/site_icons/linkedin.svg'
+import twitter from '/assets/site_icons/twitter.svg'
 
 export default function Socials(){
     return(
