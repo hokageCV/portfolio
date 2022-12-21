@@ -1,4 +1,7 @@
 import React from 'react';
+import github from "/assets/site_icons/github.svg"
+import linkedin from "/assets/site_icons/linkedin.svg"
+import twitter from "/assets/site_icons/twitter.svg"
 
 export default function Socials(){
     return(
@@ -7,7 +10,7 @@ export default function Socials(){
                 target="_blank" className='btn bg-frost-2 hover:bg-frost-3'
             >
                 <img 
-                    src="/assets/site_icons/github.svg" 
+                    src={github}
                     alt="github" 
                     width="48px" 
                     height="48px" 
@@ -17,7 +20,7 @@ export default function Socials(){
                 target="_blank" className='btn bg-frost-2 hover:bg-frost-3'
             >
                 <img   
-                src="/assets/site_icons/linkedin.svg" 
+                src={linkedin}
                 alt="linkedin" 
                 width="48px" 
                 height="48px" 
@@ -27,7 +30,7 @@ export default function Socials(){
                 target="_blank" className='btn bg-frost-2 hover:bg-frost-3'
             >
                 <img 
-                src="/assets/site_icons/twitter.svg" 
+                src={twitter}
                 alt="twitter" 
                 width="48px" 
                 height="48px" 
