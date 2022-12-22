@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from './components/sections/Navbar'
 import About from './components/sections/About'
 import Skills from './components/sections/Skills'
@@ -8,10 +8,25 @@ import Footer from './components/sections/Footer'
 
 
 export default function App() {
+  const [theme, setTheme] = useState(null)
+
+  // for initial theme
+  useEffect(()=>{
+    if( window.matchMedia('(prefers-color-scheme: dark)').matches){ setTheme('dark') }
+    else{ setTheme('light') }
+  }, [])
+
+  const toggleTheme =  () => setTheme(theme === 'dark' ? 'light' : 'dark') ;
+
+  // theme toggle
+  useEffect(() => {
+		if (theme === 'dark') { document.documentElement.classList.add('dark'); } 
+    else { document.documentElement.classList.remove('dark'); }
+	}, [theme]);
 
   return (
-    <div className="App">
-      <Navbar />
+    <div className="App bg-snow-1 dark:bg-night-1">
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       <About />
       <Skills />
       <Projects />
