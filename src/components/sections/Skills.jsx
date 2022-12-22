@@ -8,7 +8,7 @@ export default function Skills(){
         <div id='skills' className='px-4'>
             <Title>Skills</Title>
             <div className='flex flex-col md:flex-row items-center justify-center m-4 '>
-                <div className='grid xm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 '>
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5  gap-4 lg:gap-6 '>
                     {SkillsArray.map( skill => (
                         <Skill 
                             img={skill.img}

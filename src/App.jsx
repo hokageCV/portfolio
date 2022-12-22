@@ -8,13 +8,7 @@ import Footer from './components/sections/Footer'
 
 
 export default function App() {
-  const [theme, setTheme] = useState(null)
-
-  // for initial theme
-  useEffect(()=>{
-    if( window.matchMedia('(prefers-color-scheme: dark)').matches){ setTheme('dark') }
-    else{ setTheme('light') }
-  }, [])
+  const [theme, setTheme] = useState('dark')
 
   const toggleTheme =  () => setTheme(theme === 'dark' ? 'light' : 'dark') ;
 
