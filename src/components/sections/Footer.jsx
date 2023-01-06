@@ -13,6 +13,13 @@ export default function Footer(){
                     >
                     Resume
                 </a>
+                <a 
+                    href="https://www.notion.so/chaitanya-varu/3e7ac1bccaf040519befbafa23309105"
+                    target="_blank"
+                    className="p-1 border rounded"
+                >
+                    स्वाध्याय
+                </a>
                 <p>Copyright &copy; 2022 - None rights reserved</p>
             </div>
         </footer>
