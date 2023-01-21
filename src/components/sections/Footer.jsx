@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '/assets/files/resume.pdf'
+import resume from '/assets/files/resume.pdf'  //resume: 2301
 
 export default function Footer(){
     return (
