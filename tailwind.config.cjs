@@ -32,6 +32,10 @@ module.exports = {
       },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
+      },
+      spacing:{
+        "navwd-1":"150px", // nav width is 140
+        "navwd-2":"100px", // nav width is 80
       }
     },
   },

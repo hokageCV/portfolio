@@ -1,9 +1,10 @@
 import React from 'react';
+import { TbBooks } from 'react-icons/tb'
 import resume from '/assets/files/resume.pdf'  //resume: 2301
 
 export default function Footer(){
     return (
-        <footer className="footer footer-center p-4 bg-snow-3 dark:bg-night-2 text-night-3 dark:text-snow-3">
+        <footer className="footer footer-center relative p-4 bg-snow-3 dark:bg-night-2 text-night-3 dark:text-snow-3">
             <div>
                 <a 
                     href={resume}
@@ -11,16 +12,16 @@ export default function Footer(){
                     download="ChaitanyaVaruResume"
                     target="_blank"
                     >
-                    Resume
+                    Resume 
                 </a>
+                <p>Copyright &copy; 2023 - All rights reserved</p>
                 <a 
                     href="https://www.notion.so/chaitanya-varu/3e7ac1bccaf040519befbafa23309105"
                     target="_blank"
-                    className="p-1 border rounded"
+                    className="absolute bottom-0 left-0" // to stick at botton left
                 >
-                    स्वाध्याय
+                    <TbBooks />
                 </a>
-                <p>Copyright &copy; 2022 - None rights reserved</p>
             </div>
         </footer>
     )
