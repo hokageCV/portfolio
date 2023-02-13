@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Input({type, name, label, placeholder}){
-    const classes = "input input-bordered w-full max-w-xs bg-snow-4 dark:bg-night-4 placeholder-gray-300 dark:placeholder-night-1";
+    const classes = " w-full max-w-xs bg-snow-4 dark:bg-night-4 placeholder-gray-300 dark:placeholder-night-1";
 
     if (type === 'textarea') {
         return (
@@ -13,7 +13,7 @@ export default function Input({type, name, label, placeholder}){
                     type="text"
                     name={name}
                     placeholder={placeholder}
-                    className={classes}
+                    className={`textarea textarea-bordered textarea-lg ${classes}`}
                 />
             </>
         )
@@ -27,7 +27,7 @@ export default function Input({type, name, label, placeholder}){
                 type={type}
                 name={name}
                 placeholder={placeholder}
-                className={classes}
+                className={`input input-bordered ${classes}`}
             />
         </>
         
