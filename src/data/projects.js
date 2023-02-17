@@ -8,7 +8,7 @@ export default [
     {
         name: "Share Naam", img: share_naam, 
         githubLink: 'https://github.com/hokageCV/share-naam', 
-        liveLink: ''
+        liveLink: 'https://github.com/hokageCV/share-naam'
     },   
     {
         name: "Memory Game", img: memory_game, 
