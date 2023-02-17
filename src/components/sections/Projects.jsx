@@ -5,10 +5,10 @@ import projects from '../../data/projects'
 
 export default function Projects(){
     return (
-        <div id='projects' className='px-4 pt-navwd-1 md:pt-navwd-2'>
+        <div id='projects' className='px-0.5 md:p-4 pt-navwd-1 md:pt-navwd-2'>
             <Title>Projects</Title>
 
-            <div className='flex flex-col md:flex-row items-center justify-center m-4  p-4'>
+            <div className='flex flex-col md:flex-row items-center justify-center m-1 px-1 md:m-4 md:p-4'>
                 <div className='flex flex-col items-center justify-center '>
                     {projects.map( project => (
                         <Project 
