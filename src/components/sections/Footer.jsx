@@ -10,7 +10,7 @@ export default function Footer(){
                 <a 
                     href={resume}
                     className='px-2 pt-1 pb-0 border rounded font-medium  bg-frost-3 text-night-4 hover:bg-frost-2 '
-                    download="ChaitanyaVaruResume"
+                    download="01ChaitanyaVaruResume"
                     target="_blank"
                     >
                     <span style={{ display: 'inline-flex', alignItems: 'center' }}>
